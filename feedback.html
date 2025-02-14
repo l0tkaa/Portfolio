@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Q&A</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/feedback.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Feedback & Q&A</h1>
+        <p>Leave your questions, feedback, or suggestions below:</p>
+
+        <section id="feedback-form">
+            <h2>Leave a Comment</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="comment" placeholder="Your Question or Feedback..." required></textarea>
+            <button id="submit-feedback">Submit</button>
+        </section>
+
+        <h2>Recent Comments</h2>
+        <ul id="feedback-list"></ul>
+    </main>
+</body>
+</html>
