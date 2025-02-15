@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", loadProjects);
 
 function loadProjects() {
     const projects = [
-        {     title: "Snake Game",
+        {   title: "Snake Game",
             description: "Classic Snake game built with Python and Pygame. The player controls a snake that moves around the screen, eats food to grow, and avoids crashing into itself.",
             tech: "Python, Pygame",
             github: "https://github.com/l0tkaa/Snake_Game",
