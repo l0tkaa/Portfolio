@@ -9,24 +9,33 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-            <a href="feedback.html">Feedback</a>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+            <div id="auth-buttons">
+                <button id="login-btn">Login</button>
+            </div>
+            
         </nav>
     </header>
 
     <main>
-        <h1>My Blog</h1>
-
-        <section id="post-editor">
+        <!-- 🔒 Private: Only visible to logged-in admins -->
+        <section id="post-editor" style="display: none;">
             <h2>Create a New Post</h2>
-            <input type="text" id="post-title" placeholder="Title" required>
-            <textarea id="post-content" placeholder="Write your post here..." required></textarea>
-            <button id="publish-btn">Publish Post</button>
+            <div class="editor-container">
+                <input type="text" id="post-title" class="editor-title" placeholder="Title" required>
+                <textarea id="post-content" class="editor-textarea" placeholder="Write your journal entry here..." required></textarea>
+                <button id="publish-btn" class="btn btn-primary">Publish Post</button>
+            </div>
         </section>
 
+        <!-- 🌎 Public: Always visible -->
         <section id="latest-post">
             <h2>Latest Post</h2>
             <div id="latest-content"></div>

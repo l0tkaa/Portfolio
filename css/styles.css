@@ -64,3 +64,131 @@ button:hover {
 .project-card a:hover {
     color: #0056b3;
 }
+
+/* Style the entire post editor section */
+#post-editor {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Container for title and text area */
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Title input field */
+.editor-title {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Larger text area for journal entry */
+.editor-textarea {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+    resize: vertical;
+}
+
+/* Button styling */
+#publish-btn {
+    width: 50%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#publish-btn:hover {
+    background: #0056b3;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect: Underline grows from center */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* Admin Buttons */
+#auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#login-btn, #logout-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect: Glow effect */
+#login-btn:hover, #logout-btn:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.6);
+}
+
+/* Click Effect */
+#login-btn:active, #logout-btn:active {
+    transform: scale(0.95);
+}
