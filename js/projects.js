@@ -6,7 +6,7 @@ function loadProjects() {
             description: "Classic Snake game built with Python and Pygame. The player controls a snake that moves around the screen, eats food to grow, and avoids crashing into itself.",
             tech: "Python, Pygame",
             github: "https://github.com/l0tkaa/Snake_Game",
-            demo: "<img src="https://github.com/user-attachments/assets/816ecac9-2867-4a53-9c88-b6cd9d2a2c13" width="350">"
+            demo: '<img src="https://github.com/user-attachments/assets/816ecac9-2867-4a53-9c88-b6cd9d2a2c13" width="350">'
         },
         {
             title: "AI Stock Predictor",
